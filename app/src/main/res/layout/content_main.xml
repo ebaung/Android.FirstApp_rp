@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.baung.myfirstandroidappwrp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi!  Xin Chao!"
+        android:id="@+id/HiXinChao"
+        android:background="#ff0101"
+        android:minWidth="400dp"
+        android:textColor="#062ffc"
+        android:textSize="45sp"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I love Android"
+        android:id="@+id/loveandroid"
+        android:gravity="center_horizontal"
+        android:textColor="#fdfd03"
+        android:background="#03fe24"
+        android:textSize="45sp"
+        android:padding="5dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#02fdcf"
+        android:nestedScrollingEnabled="false"
+        android:onClick="clickFunction"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextField"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cloudimage1"
+        android:layout_alignTop="@+id/HiXinChao"
+        android:layout_toEndOf="@+id/HiXinChao"
+        android:src="@drawable/clouds1"
+        android:layout_above="@+id/loveandroid"
+        android:layout_toRightOf="@+id/HiXinChao"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>
